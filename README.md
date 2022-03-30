@@ -15,5 +15,5 @@ El diseño sera sujeto a ligeros cambios pero la idea es seguir el modelo creado
 Desde el inicio tambien se podrá acceder al perfil para modificar datos y desde el inicio se podrá también acceder a los restaurante donde puedes ver los platos y acceder a los platos para ver la descripción o valorar el restaurante y ver la ubicación y número de teléfono desde otra página.
 En todas las páginas habrá botones para volver directamente a las anteriores y también para deslogear, el orden natural de la página esta indicado con flechas.
 
-La review tendrá un chart indicando las puntiaciones, habrá un logo animado con el nombre de la página y sonara un sonido cunado eligas un restaurante 
+La review tendrá un chart indicando las puntiaciones, habrá un logo animado con el nombre de la página,las imagenes de los platos iran en canvas y sonara un sonido cuando eligas un restaurante 
 
