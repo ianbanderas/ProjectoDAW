@@ -20,3 +20,5 @@ La review tendrá un chart indicando las puntuaciones, habrá un logo animado co
 En todas las páginas habrá botones para volver directamente a las anteriores y también para deslogear, el orden natural de la página está indicado con flechas.
 
 
+DWEC usaré ajax,js y jquery como requiere el proyecto.
+DAW desplegare con AWS si es posible aunque no descarto cambiar de opinión si encuentro algo que me llame la atención.
