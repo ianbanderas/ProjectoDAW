@@ -24,4 +24,4 @@ En todas las páginas habrá botones para volver directamente a las anteriores y
 
 
 DWEC usaré ajax,js y jquery como requiere el proyecto.<br>
-DAW desplegare con AWS si es posible aunque no descarto cambiar de opinión si encuentro algo que me llame la atención.
+DAW desplegare con AWS si es posible aunque no descarto cambiar de opinión si encuentro algo que me llame la atención, desplegare la base de datos con AWS si acabo usandolo y mirare si es posible hacer el dominio con AWS gratis.
