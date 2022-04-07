@@ -3,6 +3,7 @@
 Para el proyecto final tengo pensado una página web de restaurantes de comida donde puedas valorar, comentar y observar distintos restaurantes y sus menús.
 
 DWES:<br>
+Usaré Laravel 8 y php para el backend<br>
 Pensé en 5 tablas: Usuarios, restaurantes, platos, ciudad y Plato_Restaurante.
 ![ERProyectoDaw](https://user-images.githubusercontent.com/72411758/161502722-a416585b-4978-4dd9-8f35-1f79d10f7f9c.png)
 ![Screenshot 2022-04-07 at 13 24 00](https://user-images.githubusercontent.com/72411758/162188398-abd93ff3-21d2-4e45-9be4-291fb99b49e9.png)
