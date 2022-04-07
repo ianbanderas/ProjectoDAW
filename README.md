@@ -5,6 +5,8 @@ Para el proyecto final tengo pensado una página web de restaurantes de comida d
 DWES:<br>
 Pensé en 5 tablas: Usuarios, restaurantes, platos, ciudad y Plato_Restaurante.
 ![ERProyectoDaw](https://user-images.githubusercontent.com/72411758/161502722-a416585b-4978-4dd9-8f35-1f79d10f7f9c.png)
+![Screenshot 2022-04-07 at 13 24 00](https://user-images.githubusercontent.com/72411758/162188398-abd93ff3-21d2-4e45-9be4-291fb99b49e9.png)
+
 <ul><li>
 Usuario contendrá los datos del mismo y podrá ser cliente, dueño de restaurante o administrador.</li>
 <li>Restaurante contendrá una Fk de "tipoDeRestaurante" que indicara el tipo de comida principal, la Fk de usuario que indicara el dueño y la Fk de ciudad.</li>
