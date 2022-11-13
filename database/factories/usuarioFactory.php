@@ -20,7 +20,7 @@ class usuarioFactory extends Factory
         return [
             "idUsu" => $this->faker->unique()->numberBetween(1,10),
             "nombre" => $this->faker->word(),  
-            "pass" => Hash::make(1234),
+            "password" => Hash::make(1234),
             "perfil" => $this->faker->numberBetween(1,3),
 
         ];
