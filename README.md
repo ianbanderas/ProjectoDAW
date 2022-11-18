@@ -25,14 +25,14 @@ En todas las páginas habrá botones para volver directamente a las anteriores y
 
 DWEC usaré ajax,js y jquery como requiere el proyecto.<br>
 DAW desplegare con AWS si es posible aunque no descarto cambiar de opinión si encuentro algo que me llame la atención, desplegare la base de datos con AWS si acabo usandolo y mirare si es posible hacer el dominio con AWS gratis.
-
-
+<br>
+<br>
 ####Historico de cambios####
-10/11 Creacion del proyecto y la base de datos
-12/11 Poblacion de la base de datos
-13/11 Login y puesta de placeholders para pruebas
-(desde entonces durante la siguiente semana he estado ocupado este finde planeo hacer gran parte del scss de la pagina principal y el login)
-Faltan el registro, los scripts, sesiones, scss, el despliegue y algunas cosas más que no recuerdo en este momento pero ire añadiendo según recuerde
-####Fin historico de  cambios####
-
+10/11 Creacion del proyecto y la base de datos<br>
+12/11 Poblacion de la base de datos<br>
+13/11 Login y puesta de placeholders para pruebas<br>
+(desde entonces durante la siguiente semana he estado ocupado este finde planeo hacer gran parte del scss de la pagina principal y el login)<br>
+Faltan el registro, los scripts, sesiones, scss, el despliegue y algunas cosas más que no recuerdo en este momento pero ire añadiendo según recuerde.<br>
+####Fin historico de  cambios####<br>
+<br>
 No inserto video porque de momento no hay apenas nada que enseñar mas que un login sin estilos y placeholders para comprobar la base de datos espero a partir de esta semana progresar mucho mas rápido.
