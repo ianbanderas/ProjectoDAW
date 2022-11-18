@@ -27,7 +27,7 @@ DWEC usaré ajax,js y jquery como requiere el proyecto.<br>
 DAW desplegare con AWS si es posible aunque no descarto cambiar de opinión si encuentro algo que me llame la atención, desplegare la base de datos con AWS si acabo usandolo y mirare si es posible hacer el dominio con AWS gratis.
 <br>
 <br>
-####Historico de cambios####
+####Historico de cambios####<br>
 10/11 Creacion del proyecto y la base de datos<br>
 12/11 Poblacion de la base de datos<br>
 13/11 Login y puesta de placeholders para pruebas<br>
