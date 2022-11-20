@@ -36,3 +36,5 @@ Faltan el registro, los scripts, sesiones, scss, el despliegue y algunas cosas m
 ####Fin historico de  cambios####<br>
 <br>
 No inserto video porque de momento no hay apenas nada que enseñar mas que un login sin estilos y placeholders para comprobar la base de datos espero a partir de esta semana progresar mucho mas rápido.
+
+//insertar categorias y comentarios
