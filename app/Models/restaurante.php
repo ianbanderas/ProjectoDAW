@@ -11,4 +11,8 @@ class restaurante extends Model
     protected $table = "restaurante";
     protected $primaryKey = "idRes";
     public $timestamps = false;
+
+    function menu(){
+        return $this->belongsToMany('App\Models\platos','plato_restaurante','idRes','idPla');
+    }
 }

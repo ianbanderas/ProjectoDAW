@@ -1,0 +1,9 @@
+h1 {
+  color: red;
+}
+
+#coco {
+  background-image: url(/images/descarga.jpg?61ae381fcc64ad3718d8f700242c3982);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

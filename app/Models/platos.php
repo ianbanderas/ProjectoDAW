@@ -11,4 +11,10 @@ class platos extends Model
     protected $table = "plato";
     protected $primaryKey = "idPla";
     public $timestamps = false;
+    
+    function menu(){
+        return $this->belongsToMany('App\Models\restaurante','plato_restaurante','idPla','idRes');
+    }
 }
+
+
