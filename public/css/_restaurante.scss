@@ -1,0 +1,62 @@
+    $border: 1px solid black;
+    $esmeralda: #205b29dd;
+    $granate: #4b0002cb;
+body{
+    
+    background-image: url("../images/restaurante.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+header{
+    display: flex;
+    border: 2px solid black;
+    margin-top: 0;
+    background-color: $granate;
+    height: 6vh;
+    align-items: center;
+}
+footer{
+    height: 4vh;
+    border: 2px solid black;
+    margin: 0;
+    background-color: $granate;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.flex-container{
+    border: $border;
+    border-top: 0px;
+    border-bottom: 0px;
+    background: $granate;
+    width: 75%;
+    height: 88.5vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.box{
+    border: $border;
+    background-color: $esmeralda;
+    color: black;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    margin: 5px auto;
+    width: 75%;
+}
+
+.button_a{
+    border: $border;
+    border-radius: 35%;
+    background-color: $esmeralda;
+    text-decoration: none;
+    color: black;
+    padding: 1vh;
+    margin-left: 1vh;
+}

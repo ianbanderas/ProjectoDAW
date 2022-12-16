@@ -12,12 +12,34 @@ use Auth;
 
 class restauranteController extends Controller
 {
-    function main (){
+    function main ($r=null){
+        if($r==null){
         $restaurante = restaurante::all();
+        }else{
+        $restaurante = $r;
+        }
+        $x = [];
+        foreach($restaurante as $valor){
+            //dump($valor->menu()->get()->count());
+            if ($valor->menu()->get()->count() > 0){
+                array_push($x,$valor);
+            }
+        }
         $ciudad = ciudad::all();
         $usuario = usuario::all();
-        return view("restaurante/main",["restaurante"=>$restaurante,"ciudad"=>$ciudad,"usuario"=>$usuario]);
-    }
+        $cat = [];
+        $t = restaurante::all();
+        foreach ($t as $item){
+            array_push($cat,$item->categoria);
+        }
+        if(count($restaurante) == 0 ){
+            $mensaje = true;
+            return view("restaurante/main",["restaurante"=>$x,"ciudad"=>$ciudad,"usuario"=>$usuario,"cat"=>$cat,"mensaje"=>$mensaje]);
+        }else{
+            return view("restaurante/main",["restaurante"=>$x,"ciudad"=>$ciudad,"usuario"=>$usuario,"cat"=>$cat]);
+        }
+        }
+       
 
     function borrar(Request $req,$idTab) {
 
@@ -35,6 +57,7 @@ class restauranteController extends Controller
        DB::table("restaurante")->insert([
         "idRes" => $max,
         "nombre" => $req->input("formRes"),
+        "categoria" => $req->input("formResCat"),
         "idCiu" => $req->input("formCiu"),
         "idUsu" => Auth::id()    
        ]);
@@ -45,5 +68,14 @@ class restauranteController extends Controller
     public function selectMax() {
         $maxValue = restaurante::max('idRes');
         return $maxValue;
+    }
+
+    function cat(Request $req){
+        $restaurante = restaurante::where("categoria",$req->input("cat"))->get();
+        return $this->main($restaurante);
+    }
+    function ciu(Request $req){
+        $restaurante = restaurante::where("idCiu",$req->input("ciudad"))->get();
+        return $this->main($restaurante);
     }
 }

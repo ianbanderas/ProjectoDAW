@@ -22,6 +22,7 @@
         </select>
 
         <input name="formRes" type="text" />
+        <input name="formResCat" type="text" />
         <button>enviar</button>
     </form>
 

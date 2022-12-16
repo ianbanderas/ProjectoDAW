@@ -1,0 +1,13 @@
+@use 'restaurante';
+
+
+h1 {
+    color:black;
+    
+}
+
+#coco{
+    background-image: url("../images/restaurante.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

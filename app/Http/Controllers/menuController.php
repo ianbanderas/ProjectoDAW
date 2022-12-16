@@ -41,8 +41,13 @@ class menuController extends Controller
         return $maxValue;
     }
 
-    function verPlato ($idPla){
-        $plato = platos::find($idPla);
-        return view("menu.plato",["plato"=>$plato]);
+    function verPlato (Request $req){
+        $plato = platos::find($req->input("idPla"));
+        $val = $plato->menu()->first();
+        $valoracion = $val->pivot->valoracion;
+        $comentario = $val->pivot->comentario;
+        
+        return view("menu.plato",["plato"=>$plato,"valoracion"=>$valoracion,"comentario"=>$comentario,"idRes"=>$req->input("idRes")]);
     }
+
 }

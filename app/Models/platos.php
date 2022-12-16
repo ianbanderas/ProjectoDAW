@@ -13,7 +13,7 @@ class platos extends Model
     public $timestamps = false;
     
     function menu(){
-        return $this->belongsToMany('App\Models\restaurante','plato_restaurante','idPla','idRes');
+        return $this->belongsToMany('App\Models\restaurante','plato_restaurante','idPla','idRes')->withPivot(["valoracion","comentario"]);
     }
 }
 

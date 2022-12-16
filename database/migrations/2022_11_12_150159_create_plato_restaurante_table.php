@@ -17,6 +17,7 @@ return new class extends Migration
             $table->unsignedInteger("idRes");
             $table->unsignedInteger("idPla");
             $table->integer('valoracion');
+            $table->string("comentario",255);
         });
         Schema::table("restaurante",function($table) {
             $table->foreign("idRes")->references("idRes")->on("restaurante");

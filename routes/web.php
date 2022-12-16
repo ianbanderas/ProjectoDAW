@@ -20,9 +20,9 @@ Route::get('main',[restauranteController::class,"main"])->middleware(['auth', 'v
 
 Route::get('/', function () {
     return redirect('login');
-});
-Route::get('borrar/{idRes}',[restauranteController::class,"borrar"])->name("borrar");
-Route::get('addRes',[restauranteController::class,"add"])->name("addRes");
+})->middleware('translate');
+Route::get('borrar/{idRes}',[restauranteController::class,"borrar"])->middleware('translate')->name("borrar");
+Route::get('addRes',[restauranteController::class,"add"])->middleware('translate')->name("addRes");
 
 
 Route::get('/dashboard', function () {
@@ -32,17 +32,31 @@ Route::get('/dashboard', function () {
 Route::get('/out', function () {
     Auth::logout();
     return redirect('login');
-})->name('out');
+})->middleware('translate')->name('out');
 
-Route::get('profile',[profileController::class,"main"])->name("profile");
+Route::get('profile',[profileController::class,"main"])->middleware('translate')->name("profile");
 
-Route::get('changePass',[profileController::class,"changePass"])->name("changePass");
+Route::get('changePass',[profileController::class,"changePass"])->middleware('translate')->name("changePass");
 
-Route::get('menu/{idRes}',[menuController::class,"main"])->name("menu");
+Route::get('menu/{idRes}',[menuController::class,"main"])->middleware('translate')->name("menu");
 
-Route::get('addPla',[menuController::class,"add"])->name("addPla");
+Route::get('addPla',[menuController::class,"add"])->middleware('translate')->name("addPla");
 
-Route::get('verPlato/{idPla}',[menuController::class,"verPlato"])->name("verPlato");
+Route::get('verPlato',[menuController::class,"verPlato"])->middleware('translate')->name("verPlato");
+
+Route::get('cambiarIdioma', function(){
+  // Session::put('language',"en");
+  if(Session::get("language")=="en"){
+    Session::put('language',"es");
+  }else{
+    Session::put('language',"en");
+  }
+    return redirect()->back();
+})->middleware('translate')->name("cambiarIdioma");
+
+Route::post('cat',[restauranteController::class,"cat"])->middleware('translate')->name("cat");
+
+Route::post('ciu',[restauranteController::class,"ciu"])->middleware('translate')->name("ciu");
 
 
 require __DIR__.'/auth.php';

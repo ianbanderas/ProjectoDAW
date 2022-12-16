@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('restaurante', function (Blueprint $table) {
             $table->increments("idRes");
             $table->string("nombre",100);
+            $table->string("categoria",100);
             $table->unsignedInteger("idUsu");
             $table->unsignedInteger("idCiu");
         });

@@ -14,13 +14,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-       // \App\Models\platos::factory(10)->create();
+      // \App\Models\restaurante::factory(10)->create();
        
-        /* 
+       /*
         $this->call([
             plato_restauranteSeeder::class
         ]);
-        */
+      */
         
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
