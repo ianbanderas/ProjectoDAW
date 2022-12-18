@@ -43,11 +43,11 @@
     @endif
     @foreach($restaurante as $item) 
     <div class="box">
-        {{$item}}
+        {{$item->idRes}}
         <a href="{{route("menu", $item->idRes)}}" >menu</a>
     </div>
         @endforeach
-
+    {{$restaurante->links()}}
     </section>
    
     

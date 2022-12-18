@@ -14,17 +14,20 @@ class restauranteController extends Controller
 {
     function main ($r=null){
         if($r==null){
-        $restaurante = restaurante::all();
+        $restaurante = DB::table("restaurante")->paginate(5);   
+        //$restaurante = restaurante::all()->paginate(6);
         }else{
-        $restaurante = $r;
+        $restaurante = $r->paginate(5);
         }
         $x = [];
+        /*
         foreach($restaurante as $valor){
             //dump($valor->menu()->get()->count());
             if ($valor->menu()->get()->count() > 0){
                 array_push($x,$valor);
             }
         }
+        */
         $ciudad = ciudad::all();
         $usuario = usuario::all();
         $cat = [];
@@ -32,11 +35,11 @@ class restauranteController extends Controller
         foreach ($t as $item){
             array_push($cat,$item->categoria);
         }
-        if(count($restaurante) == 0 ){
+        if($restaurante->count() == 0){
             $mensaje = true;
-            return view("restaurante/main",["restaurante"=>$x,"ciudad"=>$ciudad,"usuario"=>$usuario,"cat"=>$cat,"mensaje"=>$mensaje]);
+            return view("restaurante/main",["restaurante"=>$restaurante,"ciudad"=>$ciudad,"usuario"=>$usuario,"cat"=>$cat,"mensaje"=>$mensaje]);
         }else{
-            return view("restaurante/main",["restaurante"=>$x,"ciudad"=>$ciudad,"usuario"=>$usuario,"cat"=>$cat]);
+            return view("restaurante/main",["restaurante"=>$restaurante,"ciudad"=>$ciudad,"usuario"=>$usuario,"cat"=>$cat]);
         }
         }
        
@@ -71,11 +74,13 @@ class restauranteController extends Controller
     }
 
     function cat(Request $req){
-        $restaurante = restaurante::where("categoria",$req->input("cat"))->get();
+       // $restaurante = restaurante::where("categoria",$req->input("cat"));
+       $restaurante = DB::table("restaurante")->where("categoria",$req->input("cat")); 
         return $this->main($restaurante);
     }
     function ciu(Request $req){
-        $restaurante = restaurante::where("idCiu",$req->input("ciudad"))->get();
+       $restaurante = DB::table("restaurante")->where("idCiu",$req->input("ciudad")); 
+       //$restaurante = restaurante::where("idCiu",$req->input("ciudad"))->get();
         return $this->main($restaurante);
     }
 }
