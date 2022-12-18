@@ -8,6 +8,7 @@
         "dest": "/api/index.php"
     }],
     "env": {
+        "APP_KEY": "base64:91cCSSNDvDVMN76KS4Pd8lImtKc1gIXhlChFOYc4bjA=",
         "APP_ENV": "production",
         "APP_DEBUG": "true",
         "APP_URL": "https://laurldetuproyecto.com",
