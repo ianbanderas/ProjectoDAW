@@ -8,10 +8,9 @@
         "dest": "/api/index.php"
     }],
     "env": {
-        "APP_KEY": "base64:91cCSSNDvDVMN76KS4Pd8lImtKc1gIXhlChFOYc4bjA=",
         "APP_ENV": "production",
         "APP_DEBUG": "true",
-        "APP_URL": "https://laurldetuproyecto.com",
+        "APP_URL": "https://projecto-il00ddb3b-ianbanderas.vercel.app/",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
         "APP_PACKAGES_CACHE": "/tmp/packages.php",
