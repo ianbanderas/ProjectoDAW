@@ -31,10 +31,21 @@ DAW desplegare con AWS si es posible aunque no descarto cambiar de opinión si e
 10/11 Creacion del proyecto y la base de datos<br>
 12/11 Poblacion de la base de datos<br>
 13/11 Login y puesta de placeholders para pruebas<br>
-(desde entonces durante la siguiente semana he estado ocupado este finde planeo hacer gran parte del scss de la pagina principal y el login)<br>
-Faltan el registro, los scripts, sesiones, scss, el despliegue y algunas cosas más que no recuerdo en este momento pero ire añadiendo según recuerde.<br>
+19/11 cambios en la base de datos para añadir categorias y comentarios, esqueleto de la pagina principal y botones<br>
+20/11 backend, ordenacion por ciudades y categorias<br>
+27/11 css del login, el registro y la pagina principal<br>
+2/12 Más css<br>
+3/12 Más css y terminar el la pagina principal y el formulario del perfil<br>
+4/12 Página de platos<br>
+6/12 Más css<br>
+8/12 Más css<br>
+10/12 Finalizar el backend<br>
+11/12 Finalizar funcionalidades extra<br>
+13/12 finalizar Css<br>
+14/12 intentar desplegar<br>
+15/12 no conseguir desplegar<br>
+16/12 no desplegar y retoques finales<br>
+
+
 ####Fin historico de  cambios####<br>
 <br>
-No inserto video porque de momento no hay apenas nada que enseñar mas que un login sin estilos y placeholders para comprobar la base de datos espero a partir de esta semana progresar mucho mas rápido.
-
-//insertar categorias y comentarios
