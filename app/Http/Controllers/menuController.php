@@ -18,7 +18,9 @@ class menuController extends Controller
         if(restaurante::find($idRes)->idUsu == Auth::user()->idUsu){
             $prop = true;
         }
-        return view("menu/index",["platos"=>$platos,"prop"=>$prop,"idRes"=>$idRes]);
+        $restaurante = restaurante::find($idRes)->nombre;
+
+        return view("menu/index",["platos"=>$platos,"prop"=>$prop,"idRes"=>$idRes,"restaurante"=>$restaurante]);
     }
 
     function add (Request $req){

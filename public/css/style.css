@@ -10,8 +10,23 @@ header {
   border: 2px solid black;
   margin-top: 0;
   background-color: rgba(75, 0, 2, 0.7960784314);
-  height: 6vh;
+  height: 8vh;
   align-items: center;
+  justify-content: space-between;
+}
+header select {
+  margin-left: 10px;
+}
+header button {
+  width: 4rem;
+}
+header .separar {
+  display: flex;
+  width: auto;
+}
+header .separar2 {
+  display: flex;
+  width: auto;
 }
 
 footer {
@@ -30,40 +45,338 @@ footer {
   border-bottom: 0px;
   background: rgba(75, 0, 2, 0.7960784314);
   width: 75%;
-  height: 88.5vh;
+  height: 86.5vh;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  row-gap: 5px;
+  flex-direction: row;
   margin: 0 auto;
 }
-
-.box {
+.flex-container .box2 {
+  font-weight: 600;
+  font-size: 1rem;
+  color: black;
+  display: flex;
+  justify-self: flex-start;
+  text-align: center;
+  margin: 5px auto;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
+.flex-container .box2 p {
+  margin: 0;
+}
+.flex-container .box {
+  height: 14%;
+  display: flex;
+  font-size: 1rem;
   border: 1px solid black;
   background-color: rgba(32, 91, 41, 0.8666666667);
   color: black;
-  height: 4rem;
-  line-height: 4rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
   text-align: center;
   margin: 5px auto;
   width: 75%;
+  justify-content: space-around;
+}
+.flex-container .box h4 {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  margin: 5px;
+}
+.flex-container .box .sub {
+  text-decoration: underline;
+}
+.flex-container .box .sub2 {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  margin: 5px;
+}
+.flex-container .box a {
+  width: 100%;
+  text-align: center;
+  margin: auto 0;
+  margin-bottom: 5px;
+}
+.flex-container .box2 {
+  font-weight: 600;
+  font-size: 1rem;
+  color: black;
+  display: flex;
+  justify-self: flex-start;
+  text-align: center;
+  margin: 5px auto;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
+.flex-container .box2 p {
+  margin: 0;
+}
+
+.flex-container2 {
+  border: 1px solid black;
+  border-top: 0px;
+  border-bottom: 0px;
+  background: rgba(75, 0, 2, 0.7960784314);
+  width: 75%;
+  height: 86.5vh;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 5px;
+  flex-direction: row;
+  margin: 0 auto;
+  align-content: center;
+}
+.flex-container2 .pla {
+  height: 40%;
+  display: flex;
+  font-size: 1rem;
+  border: 1px solid black;
+  background-color: rgba(32, 91, 41, 0.8666666667);
+  color: black;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
+  margin: 5px auto;
+  width: 75%;
+  justify-content: space-around;
+  padding-bottom: 4px;
+}
+.flex-container2 .pla h4 {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  margin: 5px;
+}
+.flex-container2 .pla .sub {
+  text-decoration: underline;
+}
+.flex-container2 .pla .sub2 {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  margin: 5px;
+}
+.flex-container2 .pla a {
+  width: 100%;
+  text-align: center;
+  margin: auto 0;
+  margin-bottom: 5px;
+}
+.flex-container2 .box2 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: black;
+  display: flex;
+  justify-self: flex-start;
+  text-align: center;
+  margin: 5px auto;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
+.flex-container2 .box2 p {
+  margin: 0;
+}
+.flex-container2 .box {
+  height: 14%;
+  display: flex;
+  font-size: 1rem;
+  border: 1px solid black;
+  background-color: rgba(32, 91, 41, 0.8666666667);
+  color: black;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
+  margin: 5px auto;
+  width: 75%;
+  justify-content: space-around;
+}
+.flex-container2 .box h4 {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  margin: 5px;
+}
+.flex-container2 .box .sub {
+  text-decoration: underline;
+}
+.flex-container2 .box .sub2 {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  margin: 5px;
+}
+.flex-container2 .box a {
+  width: 100%;
+  text-align: center;
+  margin: auto 0;
+  margin-bottom: 5px;
+}
+.flex-container2 .box2 {
+  font-weight: 600;
+  font-size: 1rem;
+  color: black;
+  display: flex;
+  justify-self: flex-start;
+  text-align: center;
+  margin: 5px auto;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
+.flex-container2 .box2 p {
+  margin: 0;
+}
+
+.start {
+  border: 1px solid black;
+  border-top: 0px;
+  border-bottom: 0px;
+  background: rgba(75, 0, 2, 0.7960784314);
+  width: 75%;
+  height: 86.5vh;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 5px;
+  flex-direction: row;
+  margin: 0 auto;
+  align-content: flex-start;
+}
+.start .box {
+  height: 17%;
+  display: flex;
+  font-size: 1rem;
+  border: 1px solid black;
+  background-color: rgba(32, 91, 41, 0.8666666667);
+  color: black;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
+  margin: 5px auto;
+  width: 75%;
+  justify-content: space-around;
+  padding-bottom: 4px;
+}
+.start .box h4 {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  margin: 5px;
+}
+.start .box .sub {
+  text-decoration: underline;
+}
+.start .box .sub2 {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  margin: 5px;
+}
+.start .box a {
+  width: 100%;
+  text-align: center;
+  margin: auto 0;
+  margin-bottom: 5px;
 }
 
 .button_a {
+  display: flex;
+  width: 5rem;
+  height: 6vh;
   border: 1px solid black;
   border-radius: 35%;
   background-color: rgba(32, 91, 41, 0.8666666667);
   text-decoration: none;
+  text-align: center;
   color: black;
-  padding: 1vh;
+  padding: 2px;
   margin-left: 1vh;
+}
+.button_a p {
+  display: flex;
+  margin: 0px auto;
+  height: 6vh;
+  width: 100%;
+  line-height: 6vh;
+  text-align: center;
+  font-size: 1rem;
+  justify-content: center;
+  align-content: center;
+}
+
+.button_b {
+  background-color: rgba(32, 91, 41, 0.8666666667);
+  border: 1px solid black;
+  width: auto;
+  height: 6vh;
+  line-height: 6vh;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.br {
+  height: auto;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+}
+.br form {
+  width: auto;
+}
+.br label {
+  margin: 5px auto;
+  font-weight: bold;
 }
 
 h1 {
   color: black;
 }
 
+label {
+  color: black;
+}
+
+.a-color {
+  color: black;
+}
+
+.log {
+  background-color: rgba(32, 91, 41, 0.8666666667);
+}
+
 #coco {
   background-image: url("../images/restaurante.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#food {
+  height: 100%;
+  width: 20%;
+  background-image: url("../images/food.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */

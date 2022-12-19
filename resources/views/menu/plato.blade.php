@@ -9,19 +9,44 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <title>Document</title>
 </head>
-
+<header>
+<div class="separar2">
+    <a class="button_a" href="{{route("main")}}" ><p>{{__("message.home")}}</p></a>
+    <a class="button_a" href="{{route("menu", $idRes)}}" ><p>{{__("message.menu")}}</p></a>
+    <a class="button_a" href="{{route("profile")}}" ><p>{{__("message.profile")}}</p></a>
+     </div>
+     <div class="separar">
+    <a class="button_a" id="logOut" href="{{route("cambiarIdioma")}}"><p>{{__("message.language")}}</p></a>
+    <a class="button_a" href="{{route("out")}}" ><p>{{__("message.logOut")}}</p></a>
+     </div>
+   
+   
+</header>
 <body>
-    <a href="{{route("menu", $idRes)}}" >menu</a>
-    <a href="{{route("main")}}" >home</a>
-    <a href="{{route("profile")}}" >profile</a>
-    <a href="{{route("out")}}" >log out</a>
-
-    <p>{{ $plato->nombre }}</p>
-    <p>{{ $plato->descripcion }}</p>
-
-    <p>{{ $comentario }}</p>
-
-    <div class="form-group required">
+ 
+    <section class="flex-container2">
+    <div class="pla">
+    <h4 class="sub">
+        {{__("message.Name")}}
+    </h4>
+       <h4 class="sub">
+        {{__("message.Desc")}}
+    </h4>
+     <h4 class="sub">
+        {{__("message.Comment")}}
+    </h4>
+    <h4>
+        <p>{{ $plato->nombre }}</p>
+    </h4>
+ 
+    <h4>    
+        <p>{{ $plato->descripcion }}</p>
+    </h4>
+ 
+    <h4>
+     <p>{{ $comentario }}</p>
+  </h4>
+  <div class="form-group required">
         <div class="col-sm-12">
 
             @for ($i = 0; $i < 10; $i++)
@@ -35,7 +60,13 @@
             @endfor
         </div>
     </div>
+    </div>
 
+    
+    </div>
+</section>
 </body>
-
+    <footer>
+        Ián Banderas Tomillo
+    </footer>
 </html>

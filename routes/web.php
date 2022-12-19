@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\restauranteController;
 use App\Http\Controllers\profileController;
 use App\Http\Controllers\menuController;
+use App\Http\Controllers\Auth\RegisteredUserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,8 @@ use App\Http\Controllers\menuController;
 */
 
 Route::get('main',[restauranteController::class,"main"])->middleware(['auth', 'verified'])->name("main");
+
+Route::post('registrar', [RegisteredUserController::class, 'store'])->name("registrar");
 
 Route::get('/', function () {
     return redirect('login');

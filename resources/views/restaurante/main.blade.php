@@ -8,7 +8,10 @@
     <title>Document</title>
 </head>
 <header>
-    <a class="button_a" href="{{route("profile")}}" >{{__("message.profile")}}</a>
+<div class="separar2">
+    <a class="button_a" href="{{route("profile")}}" ><p>{{__("message.profile")}}</p></a>
+     
+
      <form method="post" action="{{route("cat")}}">
     @csrf
     <select name="cat">
@@ -18,8 +21,9 @@
             </option>
         @endforeach
      </select>
-     <button>envioning</button>
+     <button>{{__("message.find")}}</button>
      </form>
+
      <form method="post" action="{{route("ciu")}}">
     @csrf
     <select name="ciudad">
@@ -29,25 +33,59 @@
             </option>
         @endforeach
      </select>
-     <button>envioning</button>
+     <button>{{__("message.find")}}</button>
      </form>
-    <a class="button_a" href="{{route("out")}}" >{{__("message.logOut")}}</a>
-    <a class="button_a" id="logOut" href="{{route("cambiarIdioma")}}">{{__("message.language")}}</a>
+     </div>
+     <div class="separar">
+    <a class="button_a" id="logOut" href="{{route("cambiarIdioma")}}"><p>{{__("message.language")}}</p></a>
+    <a class="button_a" href="{{route("out")}}" ><p>{{__("message.logOut")}}</p></a>
+     </div>
+   
    
 </header>
 <body>
     
     <section class="flex-container">
     @if (isset($mensaje))
-        <h1>lo sentimos no hay restaurantes en su zona, múdese o cocine</h1>
+    <script>
+        alert("{{__("message.sorry")}}");
+        location.href ='http://localhost:8000/';
+    </script>
+    {{--<h1>{{__("message.sorry")}}</h1>--}}
     @endif
     @foreach($restaurante as $item) 
     <div class="box">
-        {{$item->idRes}}
-        <a href="{{route("menu", $item->idRes)}}" >menu</a>
+    <h4 class="sub">
+    {{__("message.Name")}}
+    </h4>
+       <h4 class="sub">
+        {{__("message.category")}}
+    </h4>
+     <h4 class="sub">
+        {{__("message.city")}}
+    </h4>
+    <h4>
+        {{$item->nombre}}
+    </h4>
+ 
+    <h4>
+        {{$item->categoria}}
+    </h4>
+ 
+    <h4>
+    @foreach ($ciudad as $item2)
+        @if ($item2->idCiu == $item->idCiu)
+            {{$item2->nombre}}    
+        @endif
+    @endforeach
+  </h4>
+
+        <a href="{{route("menu", $item->idRes)}}" >{{__("message.menu")}}</a>
     </div>
         @endforeach
+        <div class="box2">
     {{$restaurante->links()}}
+    </div>
     </section>
    
     

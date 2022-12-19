@@ -1,4 +1,6 @@
-@use 'restaurante';
+@import 'variables'; 
+@import 'restaurante';
+
 
 
 h1 {
@@ -6,8 +8,26 @@ h1 {
     
 }
 
+label{
+    color: black;
+}
+
+.a-color{
+    color: black;
+}
+
+.log{
+    background-color: $esmeralda;
+}
 #coco{
     background-image: url("../images/restaurante.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#food{
+    height:100% ;   
+    width: 20%;
+    background-image: url("../images/food.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
 }

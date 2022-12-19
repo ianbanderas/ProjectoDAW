@@ -1,22 +1,40 @@
-    $border: 1px solid black;
-    $esmeralda: #205b29dd;
-    $granate: #4b0002cb;
-body{
-    
+@import 'variables';
+
+body {
+
     background-image: url("../images/restaurante.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
 }
-header{
+
+header {
+    select{
+        margin-left: 10px;
+    }
+    button{
+        width: 4rem;
+    }
+    .separar{
+        display: flex;
+        width: auto;
+    }
+    .separar2{
+        display: flex;
+        width: auto;
+    }
+
     display: flex;
+    
     border: 2px solid black;
     margin-top: 0;
     background-color: $granate;
-    height: 6vh;
+    height: 8vh;
     align-items: center;
+    justify-content: space-between;
 }
-footer{
+
+footer {
     height: 4vh;
     border: 2px solid black;
     margin: 0;
@@ -25,38 +43,336 @@ footer{
     justify-content: center;
     margin: 0 auto;
 }
-
-.flex-container{
+.flex-container {
     border: $border;
     border-top: 0px;
     border-bottom: 0px;
     background: $granate;
     width: 75%;
-    height: 88.5vh;
+    height: 86.5vh;
 
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    row-gap: 5px;
+    flex-direction: row;
     margin: 0 auto;
-}
-
-.box{
-    border: $border;
-    background-color: $esmeralda;
+    
+.box2 {
+    font-weight:600;
+    font-size: 1rem;
     color: black;
-    height: 4rem;
-    line-height: 4rem;
+    display: flex;
+    justify-self: flex-start;
     text-align: center;
     margin: 5px auto;
-    width: 75%;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+
+    p {
+        margin: 0;
+
+    }
 }
 
-.button_a{
+    .box {
+        height: 14%;
+        display: flex;
+        font-size: 1rem;
+        border: $border;
+        background-color: $esmeralda;
+        color: black;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        text-align: center;
+        margin: 5px auto;
+        width: 75%;
+        justify-content: space-around;
+        h4{
+           
+            display: flex;
+            justify-content: center;
+            width: 25%;
+            margin: 5px;
+        }
+        .sub{
+            text-decoration: underline;
+        }
+        .sub2{
+            height: auto;
+            display: flex;
+            justify-content: center;
+            width: 40%;
+            margin: 5px;
+        }
+        a{
+            width: 100%;
+            text-align: center;
+            margin: auto 0 ;
+            margin-bottom: 5px;
+        }
+    }
+
+    .box2 {
+        font-weight:600;
+        font-size: 1rem;
+        color: black;
+        display: flex;
+        justify-self: flex-start;
+        text-align: center;
+        margin: 5px auto;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+
+        p {
+            margin: 0;
+
+        }
+    }
+}
+.flex-container2{
+    border: $border;
+    border-top: 0px;
+    border-bottom: 0px;
+    background: $granate;
+    width: 75%;
+    height: 86.5vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    flex-direction: row;
+    margin: 0 auto;
+    
+    align-content: center;
+    .pla{
+        height: 40%;
+        display: flex;
+        font-size: 1rem;
+        border: $border;
+        background-color: $esmeralda;
+        color: black;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        text-align: center;
+        margin: 5px auto;
+        width: 75%;
+        justify-content: space-around;
+        padding-bottom: 4px;
+        h4{
+           
+            display: flex;
+            justify-content: center;
+            width: 25%;
+            margin: 5px;
+        }
+        .sub{
+            text-decoration: underline;
+        }
+        .sub2{
+            height: auto;
+            display: flex;
+            justify-content: center;
+            width: 40%;
+            margin: 5px;
+        }
+        a{
+            width: 100%;
+            text-align: center;
+            margin: auto 0 ;
+            margin-bottom: 5px;
+        }
+    
+}
+.box2 {
+    font-weight:600;
+    font-size: 2rem;
+    color: black;
+    display: flex;
+    justify-self: flex-start;
+    text-align: center;
+    margin: 5px auto;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+
+    p {
+        margin: 0;
+
+    }
+}
+
+    .box {
+        height: 14%;
+        display: flex;
+        font-size: 1rem;
+        border: $border;
+        background-color: $esmeralda;
+        color: black;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        text-align: center;
+        margin: 5px auto;
+        width: 75%;
+        justify-content: space-around;
+        h4{
+           
+            display: flex;
+            justify-content: center;
+            width: 25%;
+            margin: 5px;
+        }
+        .sub{
+            text-decoration: underline;
+        }
+        .sub2{
+            height: auto;
+            display: flex;
+            justify-content: center;
+            width: 40%;
+            margin: 5px;
+        }
+        a{
+            width: 100%;
+            text-align: center;
+            margin: auto 0 ;
+            margin-bottom: 5px;
+        }
+    }
+
+    .box2 {
+        font-weight:600;
+        font-size: 1rem;
+        color: black;
+        display: flex;
+        justify-self: flex-start;
+        text-align: center;
+        margin: 5px auto;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+
+        p {
+            margin: 0;
+
+        }
+    }
+}
+.start{
+    border: $border;
+    border-top: 0px;
+    border-bottom: 0px;
+    background: $granate;
+    width: 75%;
+    height: 86.5vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    flex-direction: row;
+    margin: 0 auto;
+    align-content: flex-start;
+    .box {
+        height: 17%;
+        display: flex;
+        font-size: 1rem;
+        border: $border;
+        background-color: $esmeralda;
+        color: black;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        text-align: center;
+        margin: 5px auto;
+        width: 75%;
+        justify-content: space-around;
+        padding-bottom: 4px;
+        h4{
+           
+            display: flex;
+            justify-content: center;
+            width: 25%;
+            margin: 5px;
+        }
+        .sub{
+            text-decoration: underline;
+        }
+        .sub2{
+            height: auto;
+            display: flex;
+            justify-content: center;
+            width: 40%;
+            margin: 5px;
+        }
+        a{
+            width: 100%;
+            text-align: center;
+            margin: auto 0 ;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+
+.button_a {
+    p{
+        display: flex;
+        margin: 0px auto;
+        height: 6vh;
+        width: 100%;
+        line-height: 6vh;
+        text-align: center;
+        font-size: 1rem;
+
+        justify-content: center;
+        align-content: center;
+    }
+    display: flex;
+    width: 5rem;
+    height: 6vh;
     border: $border;
     border-radius: 35%;
     background-color: $esmeralda;
     text-decoration: none;
+    text-align: center;
     color: black;
-    padding: 1vh;
+    padding: 2px;
     margin-left: 1vh;
+}
+
+.button_b {
+    background-color: $esmeralda;
+    border: $border;
+    width: auto;
+    height: 6vh;
+    line-height: 6vh;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.br{
+    form{
+        width: auto;
+    }
+    label{
+        margin: 5px auto;
+        font-weight: bold;
+    }
+    height: auto;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
 }
