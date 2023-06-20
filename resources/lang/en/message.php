@@ -12,6 +12,7 @@
         "Log in" => "Log in",
         "Confirm Password" => "Confirm PassWord",
         "Already registered?" => "Already registered?",
+        "wrong user or password" => "wrong user or password",
 
         "Next Page" => "Next Page",
         "Previous Page" => "Previous Page",
