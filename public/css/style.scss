@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import 'variables'; 
 @import 'restaurante';
 
@@ -37,3 +38,41 @@ label{
     background-repeat: no-repeat;
     border: 0px black;
 }
+=======
+@import 'variables'; 
+@import 'restaurante';
+
+a{
+    color: $hiper;
+}
+
+
+h1 {
+    color:black;
+    
+}
+
+label{
+    color: black;
+}
+
+.a-color{
+    color: black;
+}
+
+.log{
+    background-color: $esmeralda;
+}
+#coco{
+    background-image: url("../images/restaurante.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#food{
+    height:100% ;   
+    width: 20%;
+    background-image: url("../images/food.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+>>>>>>> 38c3dcfc822b5adc5c27022aeae1b0c0709fc263
