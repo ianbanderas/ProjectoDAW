@@ -9,7 +9,7 @@ header {
   display: flex;
   border: 2px solid black;
   margin-top: 0;
-  background-color: rgba(75, 0, 2, 0.7960784314);
+  background-color: rgba(75, 0, 2, 0.8823529412);
   height: 8vh;
   align-items: center;
   justify-content: space-between;
@@ -33,7 +33,7 @@ footer {
   height: 4vh;
   border: 2px solid black;
   margin: 0;
-  background-color: rgba(75, 0, 2, 0.7960784314);
+  background-color: rgba(75, 0, 2, 0.8823529412);
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -43,7 +43,7 @@ footer {
   border: 1px solid black;
   border-top: 0px;
   border-bottom: 0px;
-  background: rgba(75, 0, 2, 0.7960784314);
+  background: rgba(75, 0, 2, 0.8823529412);
   width: 75%;
   height: 86.5vh;
   display: flex;
@@ -126,7 +126,7 @@ footer {
   border: 1px solid black;
   border-top: 0px;
   border-bottom: 0px;
-  background: rgba(75, 0, 2, 0.7960784314);
+  background: rgba(75, 0, 2, 0.8823529412);
   width: 75%;
   height: 86.5vh;
   display: flex;
@@ -248,7 +248,7 @@ footer {
   border: 1px solid black;
   border-top: 0px;
   border-bottom: 0px;
-  background: rgba(75, 0, 2, 0.7960784314);
+  background: rgba(75, 0, 2, 0.8823529412);
   width: 75%;
   height: 86.5vh;
   display: flex;

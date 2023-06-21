@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php 
     return [ 
         "language"=>"language",
@@ -38,5 +39,3 @@
 
 
     ]
-
-?>
