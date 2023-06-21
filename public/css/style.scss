@@ -27,10 +27,13 @@ label{
     background-size: cover;
     background-repeat: no-repeat;
 }
-#food{
-    height:100% ;   
-    width: 20%;
-    background-image: url("../images/food.jpeg");
+
+
+#myImage{
+    height: 10em;
+    width: 10em;
     background-size: cover;
+    background-image: url("../images/bitmap_Image.png");
     background-repeat: no-repeat;
+    border: 0px black;
 }

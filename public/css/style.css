@@ -1,5 +1,5 @@
 body {
-  background-image: url("../images/restaurante.jpg");
+  background-image: url("../images/pxfuel.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
@@ -9,7 +9,7 @@ header {
   display: flex;
   border: 2px solid black;
   margin-top: 0;
-  background-color: rgba(75, 0, 2, 0.7960784314);
+  background-color: rgba(75, 0, 2, 0.8823529412);
   height: 8vh;
   align-items: center;
   justify-content: space-between;
@@ -33,7 +33,7 @@ footer {
   height: 4vh;
   border: 2px solid black;
   margin: 0;
-  background-color: rgba(75, 0, 2, 0.7960784314);
+  background-color: rgba(75, 0, 2, 0.8823529412);
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -43,7 +43,7 @@ footer {
   border: 1px solid black;
   border-top: 0px;
   border-bottom: 0px;
-  background: rgba(75, 0, 2, 0.7960784314);
+  background: rgba(75, 0, 2, 0.8823529412);
   width: 75%;
   height: 86.5vh;
   display: flex;
@@ -126,7 +126,7 @@ footer {
   border: 1px solid black;
   border-top: 0px;
   border-bottom: 0px;
-  background: rgba(75, 0, 2, 0.7960784314);
+  background: rgba(75, 0, 2, 0.8823529412);
   width: 75%;
   height: 86.5vh;
   display: flex;
@@ -248,7 +248,7 @@ footer {
   border: 1px solid black;
   border-top: 0px;
   border-bottom: 0px;
-  background: rgba(75, 0, 2, 0.7960784314);
+  background: rgba(75, 0, 2, 0.8823529412);
   width: 75%;
   height: 86.5vh;
   display: flex;
@@ -352,7 +352,7 @@ footer {
 }
 
 a {
-  color: rgba(151, 0, 5, 0.8117647059);
+  color: rgba(192, 32, 37, 0.8117647059);
 }
 
 h1 {
@@ -377,10 +377,11 @@ label {
   background-repeat: no-repeat;
 }
 
-#food {
-  height: 100%;
-  width: 20%;
-  background-image: url("../images/food.jpeg");
+#myImage {
+  height: 10em;
+  width: 10em;
   background-size: cover;
+  background-image: url("../images/bitmap_Image.png");
   background-repeat: no-repeat;
+  border: 0px black;
 }/*# sourceMappingURL=style.css.map */

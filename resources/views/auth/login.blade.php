@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <title>Document</title>
 </head>
 <body>
+
+
 <x-guest-layout>
+
     <x-auth-card>
         <x-slot name="logo">
-          
+    <img id="myImage" >
         </x-slot>
+            
 
         <!-- Session Status -->
         <x-auth-session-status class="mb-4" :status="session('status')" />
@@ -53,13 +58,13 @@
                  <a class="underline text-sm font-semibold hover:text-gray-900 mr-4 a-color" href="{{ route('register') }}">
                         {{ __('message.Register') }}
                     </a>
-
+                <!--
                 @if (Route::has('password.request'))
                     <a class="underline text-sm font-semibold hover:text-gray-900 a-color" href="{{ route('password.request') }}">
                         {{ __('message.Forgot your password?') }}
                     </a>
                 @endif
-
+                -->
                 <x-primary-button class="ml-3">
                     {{ __('message.Log in') }}
                 </x-primary-button>
@@ -70,3 +75,25 @@
 
 </body>
 </html>
+<script>
+const myImage = document.getElementById('myImage');
+    
+    myImage.addEventListener('click', function() {
+      // Animación con anime.js
+      anime({
+        targets: myImage,
+        opacity: 0,
+        duration: 1000,
+        complete: function() {
+          // Reproducir sonido después de la animación
+          const sound = new Audio('comer.wav');
+          sound.play();
+          
+          // Restaurar la imagen después de 1 segundo
+          setTimeout(function() {
+            myImage.style.opacity = 1;
+          }, 1000);
+        }
+      });
+    });
+    </script>
