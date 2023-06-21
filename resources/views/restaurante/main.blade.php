@@ -36,6 +36,8 @@
      <button>{{__("message.find")}}</button>
      </form>
      </div>
+   
+
      <div class="separar">
     <a class="button_a" id="logOut" href="{{route("cambiarIdioma")}}"><p>{{__("message.language")}}</p></a>
     <a class="button_a" href="{{route("out")}}" ><p>{{__("message.logOut")}}</p></a>
