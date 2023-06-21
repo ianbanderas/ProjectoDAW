@@ -73,7 +73,7 @@ footer {
   display: flex;
   font-size: 1rem;
   border: 1px solid black;
-  background-color: rgba(32, 91, 41, 0.8666666667);
+  background-color: rgba(32, 91, 41, 0.7019607843);
   color: black;
   justify-content: center;
   flex-wrap: wrap;
@@ -141,7 +141,7 @@ footer {
   display: flex;
   font-size: 1rem;
   border: 1px solid black;
-  background-color: rgba(32, 91, 41, 0.8666666667);
+  background-color: rgba(32, 91, 41, 0.7019607843);
   color: black;
   justify-content: center;
   flex-wrap: wrap;
@@ -195,7 +195,7 @@ footer {
   display: flex;
   font-size: 1rem;
   border: 1px solid black;
-  background-color: rgba(32, 91, 41, 0.8666666667);
+  background-color: rgba(32, 91, 41, 0.7019607843);
   color: black;
   justify-content: center;
   flex-wrap: wrap;
@@ -263,7 +263,7 @@ footer {
   display: flex;
   font-size: 1rem;
   border: 1px solid black;
-  background-color: rgba(32, 91, 41, 0.8666666667);
+  background-color: rgba(32, 91, 41, 0.7019607843);
   color: black;
   justify-content: center;
   flex-wrap: wrap;
@@ -303,7 +303,7 @@ footer {
   height: 6vh;
   border: 1px solid black;
   border-radius: 35%;
-  background-color: rgba(32, 91, 41, 0.8666666667);
+  background-color: rgba(32, 91, 41, 0.7019607843);
   text-decoration: none;
   text-align: center;
   color: black;
@@ -323,7 +323,7 @@ footer {
 }
 
 .button_b {
-  background-color: rgba(32, 91, 41, 0.8666666667);
+  background-color: rgba(32, 91, 41, 0.7019607843);
   border: 1px solid black;
   width: auto;
   height: 6vh;
@@ -351,6 +351,10 @@ footer {
   font-weight: bold;
 }
 
+a {
+  color: rgba(151, 0, 5, 0.8117647059);
+}
+
 h1 {
   color: black;
 }
@@ -364,7 +368,7 @@ label {
 }
 
 .log {
-  background-color: rgba(32, 91, 41, 0.8666666667);
+  background-color: rgba(32, 91, 41, 0.7019607843);
 }
 
 #coco {

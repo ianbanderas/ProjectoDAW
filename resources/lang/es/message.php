@@ -12,6 +12,7 @@
         "Log in" => "Entrar",
         "Confirm Password" => "Confirmar Contraseña",        
         "Already registered?" => "¿Ya registrado?",
+        "wrong user or password" => "Usuario o contraseña incorrectos",
         
         "Next Page" => "Avanzar Pag.",
         "Previous Page" => "Retroceder Pag",
